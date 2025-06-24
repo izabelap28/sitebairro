@@ -1,0 +1,77 @@
+body {
+ font-family: 'Arial', sans-serif;
+ background-color: #fff;
+ margin: 0;
+ padding: 0;
+}
+
+nav {
+ background-color: #f0f0f0;
+ border-bottom: 2px solid #ccc;
+}
+
+nav ul {
+ display: flex;
+ justify-content: center;
+ list-style: none;
+ padding: 10px;
+ margin: 0;
+}
+
+nav ul li {
+ margin: 0 15px;
+}
+
+nav ul li a {
+ text-decoration: none;
+ color: #000;
+ font-weight: bold;
+}
+
+main {
+ padding: 20px;
+ text-align: center;
+}
+
+.titulo h1 {
+ font-size: 22px;
+ border: 1px solid #000;
+ display: inline-block;
+ padding: 10px;
+ margin-bottom: 20px;
+}
+
+.conteudo ul {
+ list-style-type: none;
+ padding: 0;
+ font-size: 18px;
+}
+
+.conteudo ul li {
+ margin: 5px 0;
+}
+
+.contato {
+ margin-top: 30px;
+}
+
+.contato p {
+ font-size: 16px;
+}
+
+button {
+ margin-top: 10px;
+ padding: 8px 16px;
+ font-size: 16px;
+ background-color: #ddd;
+ border: 1px solid #888;
+ cursor: pointer;
+}
+
+footer {
+ text-align: center;
+ font-size: 14px;
+ margin-top: 40px;
+ padding: 10px;
+ border-top: 1px solid #ccc;
+}
