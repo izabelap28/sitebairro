@@ -1,42 +1,48 @@
 body {
 margin: 0;
 padding: 0;
-font-family: "Georgia", serif;
-background-color: #f7f0e8;
-color: #5a4032;
+background-color: #f6ede4;
+font-family: 'Georgia', serif;
+color: #5c4433;
 text-align: center;
 }
 
-/* Menu de navegação */
+/* Menu */
 .menu {
 display: flex;
 justify-content: center;
-gap: 20px;
-background-color: #f0e4d3;
+gap: 16px;
 padding: 20px 0;
+background-color: #f2e5d6;
 }
 
 .menu a {
 text-decoration: none;
-color: #5a4032;
-background-color: #e7d8c5;
-padding: 10px 20px;
+background-color: #e5d3c1;
+color: #5c4433;
+padding: 8px 16px;
 border-radius: 20px;
-font-weight: bold;
+font-weight: 500;
+font-size: 14px;
 }
 
-/* Título principal */
+/* Título */
 h1 {
-font-size: 48px;
-margin-top: 40px;
+font-size: 42px;
+margin: 40px 0 10px;
 line-height: 1.2;
 }
 
-/* Texto de descrição */
+h1 span {
+font-weight: normal;
+}
+
+/* Descrição */
 .descricao {
-max-width: 600px;
-margin: 20px auto 40px;
-font-size: 18px;
+font-size: 17px;
+line-height: 1.6;
+margin-bottom: 40px;
+color: #5c4433;
 }
 
 /* Seção de fotos */
@@ -47,27 +53,29 @@ gap: 30px;
 margin-bottom: 60px;
 }
 
-.foto h2 {
-font-size: 18px;
+.foto p {
 margin-bottom: 10px;
+font-weight: 500;
+font-size: 16px;
 }
 
-.box {
+.caixa {
 width: 120px;
 height: 120px;
-background-color: #e7d8c5;
+background-color: #e5d3c1;
+border: 1px solid #c2a78f;
 display: flex;
 align-items: center;
 justify-content: center;
-font-weight: bold;
-border: 1px solid #bcae9e;
-border-radius: 6px;
+font-weight: 500;
+border-radius: 4px;
+font-size: 16px;
 }
 
 /* Rodapé */
 footer {
-background-color: #e7d8c5;
+background-color: #e5d3c1;
 padding: 20px;
 font-size: 14px;
-color: #5a4032;
+color: #5c4433;
 }
