@@ -1,101 +1,73 @@
- {
+body {
 margin: 0;
 padding: 0;
-box-sizing: border-box;
-}
-
-body {
-font-family: 'Arial', sans-serif;
-background-color: #fdf8f4;
-color: #3b3b3b;
-}
-
-header {
-background-color: #f1e7de;
-padding: 20px;
+font-family: "Georgia", serif;
+background-color: #f7f0e8;
+color: #5a4032;
 text-align: center;
 }
 
+/* Menu de navegação */
 .menu {
 display: flex;
 justify-content: center;
 gap: 20px;
-list-style: none;
+background-color: #f0e4d3;
+padding: 20px 0;
 }
 
 .menu a {
 text-decoration: none;
-color: #5a4e44;
+color: #5a4032;
+background-color: #e7d8c5;
+padding: 10px 20px;
+border-radius: 20px;
 font-weight: bold;
-padding: 8px 16px;
-background-color: #f8f1ea;
-border-radius: 6px;
-border: 1px solid #d9cfc5;
-transition: background 0.3s;
 }
 
-.menu a:hover {
-background-color: #e2d7cd;
-}
-
-main {
-padding: 40px 20px;
-text-align: center;
-}
-
-.titulo h1 {
-font-size: 2.5em;
-color: #5b4a3c;
-margin-bottom: 10px;
+/* Título principal */
+h1 {
+font-size: 48px;
+margin-top: 40px;
 line-height: 1.2;
 }
 
-.titulo span {
-font-size: 0.8em;
-font-weight: normal;
-}
-
+/* Texto de descrição */
 .descricao {
-margin: 20px auto 40px;
 max-width: 600px;
-font-size: 1.1em;
-color: #6b5e53;
+margin: 20px auto 40px;
+font-size: 18px;
 }
 
+/* Seção de fotos */
 .fotos {
 display: flex;
 justify-content: center;
-flex-wrap: wrap;
 gap: 30px;
+margin-bottom: 60px;
 }
 
-.foto {
-width: 180px;
-}
-
-.foto h3 {
+.foto h2 {
+font-size: 18px;
 margin-bottom: 10px;
-font-size: 1em;
-color: #4e4035;
 }
 
-.imagem {
-background-color: #eee3d9;
-border: 2px solid #cbbfb5;
-height: 200px;
+.box {
+width: 120px;
+height: 120px;
+background-color: #e7d8c5;
 display: flex;
-justify-content: center;
 align-items: center;
-color: #6a5d51;
+justify-content: center;
 font-weight: bold;
-border-radius: 8px;
+border: 1px solid #bcae9e;
+border-radius: 6px;
 }
 
+/* Rodapé */
 footer {
-margin-top: 60px;
+background-color: #e7d8c5;
 padding: 20px;
-background-color: #f1e7de;
-font-size: 0.9em;
-color: #7b6a5d;
-text-align: center;
+font-size: 14px;
+color: #5a4032;
 }
