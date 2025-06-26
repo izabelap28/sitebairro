@@ -1,55 +1,101 @@
-body {
+ {
 margin: 0;
-font-family: Arial, sans-serif;
-background-color: #f9f6f1;
-color: #4a3f35;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+background-color: #fdf8f4;
+color: #3b3b3b;
 }
 
 header {
-background-color: #e8ded2;
+background-color: #f1e7de;
+padding: 20px;
+text-align: center;
+}
+
+.menu {
+display: flex;
+justify-content: center;
+gap: 20px;
+list-style: none;
+}
+
+.menu a {
+text-decoration: none;
+color: #5a4e44;
+font-weight: bold;
+padding: 8px 16px;
+background-color: #f8f1ea;
+border-radius: 6px;
+border: 1px solid #d9cfc5;
+transition: background 0.3s;
+}
+
+.menu a:hover {
+background-color: #e2d7cd;
+}
+
+main {
 padding: 40px 20px;
 text-align: center;
 }
 
-header h1 {
-margin: 0;
+.titulo h1 {
 font-size: 2.5em;
+color: #5b4a3c;
+margin-bottom: 10px;
+line-height: 1.2;
 }
 
-header p {
-font-size: 1.2em;
-margin-top: 10px;
+.titulo span {
+font-size: 0.8em;
+font-weight: normal;
 }
 
-.sobre, .galeria {
-padding: 40px 20px;
-max-width: 1000px;
-margin: auto;
+.descricao {
+margin: 20px auto 40px;
+max-width: 600px;
+font-size: 1.1em;
+color: #6b5e53;
 }
 
-.sobre h2, .galeria h2 {
-color: #5c4d3d;
-border-bottom: 2px solid #d8cfc2;
-padding-bottom: 5px;
-}
-
-.galeria .fotos {
+.fotos {
 display: flex;
-gap: 20px;
+justify-content: center;
 flex-wrap: wrap;
-margin-top: 20px;
+gap: 30px;
 }
 
-.galeria .fotos img {
-width: 100%;
-max-width: 300px;
+.foto {
+width: 180px;
+}
+
+.foto h3 {
+margin-bottom: 10px;
+font-size: 1em;
+color: #4e4035;
+}
+
+.imagem {
+background-color: #eee3d9;
+border: 2px solid #cbbfb5;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #6a5d51;
+font-weight: bold;
 border-radius: 8px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 footer {
-text-align: center;
-background-color: #e8ded2;
+margin-top: 60px;
 padding: 20px;
-margin-top: 40px;
+background-color: #f1e7de;
+font-size: 0.9em;
+color: #7b6a5d;
+text-align: center;
 }
