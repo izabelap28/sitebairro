@@ -1,0 +1,50 @@
+body {
+margin: 0;
+padding: 0;
+background-color: #f6ede4;
+font-family: 'Georgia', serif;
+color: #5c4433;
+text-align: center;
+}
+
+/* Menu */
+.menu {
+display: flex;
+justify-content: center;
+gap: 16px;
+padding: 20px 0;
+background-color: #f2e5d6;
+}
+
+.menu a {
+text-decoration: none;
+background-color: #e5d3c1;
+color: #5c4433;
+padding: 8px 16px;
+border-radius: 20px;
+font-weight: 500;
+font-size: 14px;
+}
+
+/* Título */
+h1 {
+font-size: 36px;
+margin: 40px 0 20px;
+}
+
+/* Texto */
+.texto {
+max-width: 700px;
+margin: 0 auto 60px;
+font-size: 18px;
+line-height: 1.8;
+padding: 0 20px;
+}
+
+/* Rodapé */
+footer {
+background-color: #e5d3c1;
+padding: 20px;
+font-size: 14px;
+color: #5c4433;
+}
