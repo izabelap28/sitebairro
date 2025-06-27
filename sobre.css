@@ -41,6 +41,17 @@ line-height: 1.8;
 padding: 0 20px;
 }
 
+.button.primary {
+  background-color: #cbb096;
+  color: #000000;
+  border: 2px solid #cbb096;
+}
+
+  .button.primary:hover {
+    transform: scale(1..05);
+    box-shadow: 0 5px 15px rgba(68, 0, 255, 0.3);
+  }
+
 /* Rodapé */
 footer {
 background-color: #e5d3c1;
