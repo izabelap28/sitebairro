@@ -48,7 +48,7 @@ padding: 0 20px;
 }
 
   .button.primary:hover {
-    transform: scale(1..05);
+    transform: scale(1.30);
     box-shadow: 0 5px 15px rgba(68, 0, 255, 0.3);
   }
 
