@@ -47,7 +47,25 @@ padding: 0 20px;
   border: 2px solid #cbb096;
 }
 
-  .button.primary:hover {
+  .button.primary:hover  {
+display: inline-block;
+background-color: #d8c3a5; /* bege claro */
+color: #4e342e; /* marrom escuro */
+padding: 12px 24px;
+border: none;
+border-radius: 8px;
+text-decoration: none;
+font-family: 'Arial', sans-serif;
+font-size: 16px;
+font-weight: bold;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+transition: background-color 0.3s ease;
+}
+
+.botao-fale-conosco:hover {
+background-color: #e6d3b3;
+}
+
     transform: scale(1.30);
     box-shadow: 0 5px 15px rgba(68, 0, 255, 0.3);
   }
