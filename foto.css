@@ -5,24 +5,6 @@ background-color: #f7f3ef;
 color: #333;
 }
 
-.menu {
-display: flex;
-justify-content: center;
-gap: 16px;
-padding: 20px 0;
-background-color: #f2e5d6;
-}
-
-.menu a {
-text-decoration: none;
-background-color: #e5d3c1;
-color: #5c4433;
-padding: 8px 16px;
-border-radius: 20px;
-font-weight: 500;
-font-size: 14px;
-}
-
 nav {
 background-color: #e9ddd3;
 padding: 15px 0;
@@ -42,11 +24,12 @@ margin: 0 15px;
 
 nav a {
 text-decoration: none;
-color: #5e4c43;
-font-weight: bold;
-background-color: #f0e6dd;
-padding: 6px 14px;
+background-color: #e5d3c1;
+color: #5c4433;
+padding: 8px 16px;
 border-radius: 20px;
+font-weight: 500;
+font-size: 14px;
 }
 
 header {
