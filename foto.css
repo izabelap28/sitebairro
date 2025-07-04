@@ -1,53 +1,77 @@
 body {
-font-family: Arial, sans-serif;
-background-color: #f9f6f2;
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+background-color: #f7f3ef;
 color: #333;
+}
+
+nav {
+background-color: #e9ddd3;
+padding: 15px 0;
+text-align: center;
+}
+
+nav ul {
+list-style: none;
 margin: 0;
 padding: 0;
 }
 
+nav li {
+display: inline-block;
+margin: 0 15px;
+}
+
+nav a {
+text-decoration: none;
+color: #5e4c43;
+font-weight: bold;
+background-color: #f0e6dd;
+padding: 6px 14px;
+border-radius: 20px;
+}
+
 header {
-background-color: #d7ccc8;
-padding: 20px;
 text-align: center;
+padding: 30px 20px;
 }
 
-h1 {
-margin: 0;
-color: #4e342e;
+header h1 {
+font-size: 2em;
+margin-bottom: 10px;
 }
 
-main {
-padding: 20px;
-text-align: center;
-}
-
-button {
-background-color: #a1887f;
-color: white;
-border: none;
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-border-radius: 5px;
-}
-
-button:hover {
-background-color: #8d6e63;
+header span {
+font-weight: 300;
 }
 
 .galeria {
-margin-top: 20px;
 display: flex;
-flex-wrap: wrap;
 justify-content: center;
-gap: 15px;
+flex-wrap: wrap;
+gap: 30px;
+padding: 20px;
 }
 
-.galeria img {
-width: 180px;
-height: 120px;
-object-fit: cover;
-border: 2px solid #ccc;
-border-radius: 5px;
+.foto {
+text-align: center;
+}
+
+.caixa {
+width: 150px;
+height: 150px;
+background-color: #dfcfc2;
+border-radius: 8px;
+line-height: 150px;
+font-weight: bold;
+color: #4e3b31;
+margin-top: 8px;
+}
+
+footer {
+text-align: center;
+background-color: #dbc7b7;
+padding: 15px;
+font-size: 14px;
+color: #4e342e;
 }
