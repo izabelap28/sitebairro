@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Galeria de Fotos</title>
- <link rel="stylesheet" href="estilo.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fotos – São José Operário</title>
+<link rel="stylesheet" href="fotos.css">
 </head>
 <body>
- <header>
- <h1>Galeria de Fotos</h1>
- </header>
+<nav>
+<ul>
+<li><a href="#">Início</a></li>
+<li><a href="#">Sobre</a></li>
+<li><a href="#">Localização</a></li>
+<li><a href="#">Fotos</a></li>
+</ul>
+</nav>
 
- <main>
- <button id="adicionarFotoBtn">Adicionar Fotos</button>
- <input type="file" id="inputFotos" accept="image/*" multiple hidden>
+<header>
+<h1>São José <span>operário</span></h1>
+<p>Veja algumas fotos do nosso bairro.</p>
+</header>
 
- <div class="galeria" id="galeriaFotos"></div>
- </main>
+<main class="galeria">
+<div class="foto">
+<p>Foto 1</p>
+<div class="caixa">Igreja</div>
+</div>
+<div class="foto">
+<p>Foto 2</p>
+<div class="caixa">Salão</div>
+</div>
+<div class="foto">
+<p>Foto 3</p>
+<div class="caixa">Escola</div>
+</div>
+<div class="foto">
+<p>Foto 4</p>
+<div class="caixa">Praça</div>
+</div>
+<div class="foto">
+<p>Foto 5</p>
+<div class="caixa">Mercado</div>
+</div>
+</main>
 
- <script>
- const inputFotos = document.getElementById('inputFotos');
- const galeria = document.getElementById('galeriaFotos');
- const adicionarBtn = document.getElementById('adicionarFotoBtn');
-
- adicionarBtn.onclick = () => inputFotos.click();
-
- inputFotos.onchange = () => {
- galeria.innerHTML = ''; // Limpa para novas fotos
- const files = [...inputFotos.files].slice(0, 5); // Limita a 5 fotos
- files.forEach(file => {
- const reader = new FileReader();
- reader.onload = () => {
- const img = document.createElement('img');
- img.src = reader.result;
- img.alt = 'Foto adicionada';
- galeria.appendChild(img);
- };
- reader.readAsDataURL(file);
- });
- };
- </script>
+<footer>
+Desenvolvido por Izabela Parizotto – 2025 <br>
+— Todos os direitos reservados
+</footer>
 </body>
 </html>
