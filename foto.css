@@ -22,7 +22,7 @@ display: inline-block;
 margin: 0 15px;
 }
 
-nav a {
+.menu a {
 text-decoration: none;
 background-color: #e5d3c1;
 color: #5c4433;
@@ -30,7 +30,6 @@ padding: 8px 16px;
 border-radius: 20px;
 font-weight: 500;
 font-size: 14px;
-}
 
 header {
 text-align: center;
