@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Galeria de Fotos</title>
-<link rel="stylesheet" href="estilo.css" />
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Galeria de Fotos</title>
+ <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+ <header>
+ <h1>Galeria de Fotos</h1>
+ </header>
 
-<header>
-<h1>Galeria do Bairro</h1>
-</header>
+ <main>
+ <button id="adicionarFotoBtn">Adicionar Fotos</button>
+ <input type="file" id="inputFotos" accept="image/*" multiple hidden>
 
-<section class="galeria">
-<div class="foto">
-<img src="foto1.jpg" alt="Foto 1 do bairro" />
-</div>
-<div class="foto">
-<img src="foto2.jpg" alt="Foto 2 do bairro" />
-</div>
-<div class="foto">
-<img src="foto3.jpg" alt="Foto 3 do bairro" />
-</div>
-<div class="foto">
-<img src="foto4.jpg" alt="Foto 4 do bairro" />
-</div>
-<div class="foto">
-<img src="foto5.jpg" alt="Foto 5 do bairro" />
-</div>
-</section>
+ <div class="galeria" id="galeriaFotos"></div>
+ </main>
 
+ <script>
+ const inputFotos = document.getElementById('inputFotos');
+ const galeria = document.getElementById('galeriaFotos');
+ const adicionarBtn = document.getElementById('adicionarFotoBtn');
+
+ adicionarBtn.onclick = () => inputFotos.click();
+
+ inputFotos.onchange = () => {
+ galeria.innerHTML = ''; // Limpa para novas fotos
+ const files = [...inputFotos.files].slice(0, 5); // Limita a 5 fotos
+ files.forEach(file => {
+ const reader = new FileReader();
+ reader.onload = () => {
+ const img = document.createElement('img');
+ img.src = reader.result;
+ img.alt = 'Foto adicionada';
+ galeria.appendChild(img);
+ };
+ reader.readAsDataURL(file);
+ });
+ };
+ </script>
 </body>
 </html>
