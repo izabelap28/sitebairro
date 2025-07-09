@@ -1,66 +1,38 @@
- {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fotos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav>
+<a href="#">Início</a>
+<a href="#">Sobre</a>
+<a href="#">Localização</a>
+<a href="#">Fotos</a>
+</nav>
+</header>
 
-body {
-font-family: 'Segoe UI', sans-serif;
-background-color: #fffaf6;
-color: #333;
-padding: 20px;
-}
-
-nav {
-background-color: #ffe6e6;
-padding: 15px;
-border-radius: 10px;
-margin-bottom: 30px;
-}
-
-nav ul {
-display: flex;
-justify-content: center;
-gap: 30px;
-list-style: none;
-}
-
-nav a {
-text-decoration: none;
-font-weight: bold;
-color: #ff3399;
-padding: 8px 16px;
-border: 2px solid #ff99cc;
-border-radius: 8px;
-background-color: #fff0f5;
-transition: 0.3s;
-}
-
-nav a:hover {
-background-color: #ffd6eb;
-}
-
-.galeria {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 40px;
-justify-items: center;
-}
-
-.foto {
-text-align: center;
-}
-
-.foto h3 {
-margin-bottom: 10px;
-font-size: 1.1em;
-color: #cc3366;
-}
-
-.foto img {
-width: 200px;
-height: 260px;
-object-fit: cover;
-border: 2px solid #ff99cc;
-border-radius: 10px;
-}
+<main class="galeria">
+<div class="foto">
+<p>Foto Salão</p>
+<div class="imagem">Foto 1</div>
+</div>
+<div class="foto">
+<p>Foto Igreja</p>
+<div class="imagem">Foto 2</div>
+</div>
+<div class="foto">
+<p>Foto Mais Sten</p>
+<div class="imagem">Foto 3</div>
+</div>
+<div class="foto">
+<p>Foto Escola</p>
+<div class="imagem">Foto 4</div>
+</div>
+</main>
+</body>
+</html>
