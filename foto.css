@@ -1,77 +1,66 @@
-body {
+ {
 margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
 font-family: 'Segoe UI', sans-serif;
-background-color: #f7f3ef;
+background-color: #fffaf6;
 color: #333;
+padding: 20px;
 }
 
 nav {
-background-color: #e9ddd3;
-padding: 15px 0;
-text-align: center;
+background-color: #ffe6e6;
+padding: 15px;
+border-radius: 10px;
+margin-bottom: 30px;
 }
 
 nav ul {
+display: flex;
+justify-content: center;
+gap: 30px;
 list-style: none;
-margin: 0;
-padding: 0;
 }
 
-nav li {
-display: inline-block;
-margin: 0 15px;
-}
-
-.menu a {
+nav a {
 text-decoration: none;
-background-color: #e5d3c1;
-color: #5c4433;
+font-weight: bold;
+color: #ff3399;
 padding: 8px 16px;
-border-radius: 20px;
-font-weight: 500;
-font-size: 14px;
-
-header {
-text-align: center;
-padding: 30px 20px;
+border: 2px solid #ff99cc;
+border-radius: 8px;
+background-color: #fff0f5;
+transition: 0.3s;
 }
 
-header h1 {
-font-size: 2em;
-margin-bottom: 10px;
-}
-
-header span {
-font-weight: 300;
+nav a:hover {
+background-color: #ffd6eb;
 }
 
 .galeria {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 30px;
-padding: 20px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 40px;
+justify-items: center;
 }
 
 .foto {
 text-align: center;
 }
 
-.caixa {
-width: 150px;
-height: 150px;
-background-color: #dfcfc2;
-border-radius: 8px;
-line-height: 150px;
-font-weight: bold;
-color: #4e3b31;
-margin-top: 8px;
+.foto h3 {
+margin-bottom: 10px;
+font-size: 1.1em;
+color: #cc3366;
 }
 
-footer {
-text-align: center;
-background-color: #dbc7b7;
-padding: 15px;
-font-size: 14px;
-color: #4e342e;
+.foto img {
+width: 200px;
+height: 260px;
+object-fit: cover;
+border: 2px solid #ff99cc;
+border-radius: 10px;
 }
