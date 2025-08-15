@@ -47,7 +47,10 @@ color: #5c4433;
 
 /* Seção de fotos */
 .fotos {
-display: flex;
+width: 200px;
+height: 120px;
+object-fit: cover;
+display: block;
 justify-content: center;
 gap: 30px;
 margin-bottom: 60px;
