@@ -59,6 +59,20 @@ font-weight: 500;
 font-size: 16px;
 }
 
+.location-button {
+    display: inline-block;
+    background-color: #4285f4;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-top: 10px;
+    border: 2px solid #0059c1;
+}
+
 .caixa {
 width: 120px;
 height: 120px;
